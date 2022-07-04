@@ -15,19 +15,14 @@ public class App {
 
     LinkedList<Integer> list = new LinkedList<>();
     list.add(0);
-    list.add(0);
-    list.add(1);
     list.add(1);
     list.add(2);
-    list.add(2);
     list.add(3);
-    list.add(3);
-    list.add(4);
     list.add(4);
     Player player = new Player(list, "human1");
-    // Monster monster1 = new Monster(0, 0);
+    Monster monster1 = new Monster(0, 0);
 
-    // player.monsterDeck.add(monster1);
+    
 
     player.drawMonsters();
     System.out.println(player.toString());

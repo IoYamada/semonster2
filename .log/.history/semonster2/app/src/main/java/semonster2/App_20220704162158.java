@@ -25,11 +25,11 @@ public class App {
     list.add(4);
     list.add(4);
     Player player = new Player(list, "human1");
-    // Monster monster1 = new Monster(0, 0);
+    Monster monster1 = new Monster(0, 0);
 
-    // player.monsterDeck.add(monster1);
+    player.monsterDeck.add(monster1);
 
-    player.drawMonsters();
+    // player.drawMonsters();
     System.out.println(player.toString());
   }
 
