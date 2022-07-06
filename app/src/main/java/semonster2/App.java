@@ -18,6 +18,8 @@ public class App {
     LinkedList<Integer> list = new LinkedList<>();
     LinkedList<Integer> list1 = new LinkedList<>();
     LinkedList<Integer> list2 = new LinkedList<>();
+    
+    int hp = 50;
 
     /* 勝敗用ランダム出力 */
     Random rand = new Random();
@@ -25,16 +27,20 @@ public class App {
     list.add(rand.nextInt(5));
     list.add(rand.nextInt(5));
 
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 8; i++) {
       list1.add(i);
       list1.add(i);
       list2.add(i);
       list2.add(i);
     }
-
+    
+    
+    
+    
     seMonsterGame gameTest = new seMonsterGame(list, list1, "player1", list2, "player2");
     System.out.println(gameTest.toString());
     System.out.println(gameTest.battle());
+
   }
 
 }
