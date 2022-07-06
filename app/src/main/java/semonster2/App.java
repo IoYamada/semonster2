@@ -37,7 +37,7 @@ public class App {
     
     
     
-    seMonsterGame gameTest = new seMonsterGame(list, list1, "player1", list2, "player2");
+    seMonsterGame gameTest = new seMonsterGame(list, list1, "player1", list2, "player2", hp);
     System.out.println(gameTest.toString());
     System.out.println(gameTest.battle());
 
