@@ -26,7 +26,7 @@ public class seMonsterGame {
         + ":レア度[" + monster2.getMonsterRare() + "]\n";
 
     if (monster1.getMonsterRare() > monster2.getMonsterRare()) {
-      message += "Winner : " + this.player1.name;
+      message += this.player1.name;
     } else if (monster1.getMonsterRare() < monster2.getMonsterRare()) {
       message += "Winner : " + this.player2.name;
     } else {
