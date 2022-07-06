@@ -9,10 +9,10 @@ public class seMonsterGame {
   LinkedList<Integer> randomNumberList;
 
   seMonsterGame(LinkedList<Integer> randomNumberList, LinkedList<Integer> List1, String playerName1,
-      LinkedList<Integer> List2, String playerName2) {
-    this.player1 = new Player(List1, playerName1);
+      LinkedList<Integer> List2, String playerName2, int hitPoint) {
+    this.player1 = new Player(List1, playerName1,hitPoint);
     this.player1.drawMonsters();
-    this.player2 = new Player(List2, playerName2);
+    this.player2 = new Player(List2, playerName2, hitPoint);
     this.player2.drawMonsters();
     this.randomNumberList = randomNumberList;
   }
