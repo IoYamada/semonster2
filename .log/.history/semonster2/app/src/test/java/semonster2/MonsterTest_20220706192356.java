@@ -10,8 +10,8 @@ public class MonsterTest {
   @Test
   public void testSummonMonster1() {
     Monster monster1 = new Monster(0, 0);
-    Assert.assertEquals("スライム:レア度[0]\n", monster1.toString());
+    Assert.assertEquals("キングデュラハン:レア度[3]\n", monster1.toString());
     Monster monster2 = new Monster(3, 3);
-    Assert.assertEquals("キングデュラハン:レア度[3]\n", monster2.toString());
+    Assert.assertEquals("キングデュラハン:レア度[3]\n", monster1.toString());
   }
 }

@@ -10,16 +10,12 @@ public class Monster {
     evolutionMonster();
   }
 
-  String getMonsterName() {
-    return this.name;
-  }
-
-  int getMonsterRare() {
-    return this.rare;
+  int getMonsterRare(int mnumber) {
+    return monsters[mnumber];
   }
 
   String summonMonster(int mnumber) {
-    String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント", "ゾンビ", "ドラキュラ", "ワーウルフ" };
+    String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント" };
     return monsters[mnumber];
   }
 
