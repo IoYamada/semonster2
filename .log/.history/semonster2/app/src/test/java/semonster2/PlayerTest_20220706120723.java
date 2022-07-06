@@ -18,12 +18,12 @@ public class PlayerTest {
     }
 
     int hp = 50;
-
+    
     Player player = new Player(list, "human1", hp);
 
     player.drawMonsters();
     Assert.assertEquals(
-        "Deck:human1 HP:50\nスライム:レア度[0]\nサハギン:レア度[1]\nドラゴン:レア度[2]\nデュラハン:レア度[3]\nシーサーペント:レア度[4]\nゾンビ:レア度[5]\nドラキュラ:レア度[6]\nワーウルフ:レア度[7]\n",
+        "Deck:human1\nスライム:レア度[0]\nサハギン:レア度[1]\nドラゴン:レア度[2]\nデュラハン:レア度[3]\nシーサーペント:レア度[4]\nゾンビ:レア度[5]\nドラキュラ:レア度[6]\nワーウルフ:レア度[7]\n",
         player.toString());
   }
 

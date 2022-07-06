@@ -28,7 +28,7 @@ public class Player {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("Deck:" + this.name + " HP:" + this.hitPint + "\n");
+    sb.append("Deck:" + this.name + "\n");
 
     for (Monster m : this.monsterDeck) {
       sb.append(m);
