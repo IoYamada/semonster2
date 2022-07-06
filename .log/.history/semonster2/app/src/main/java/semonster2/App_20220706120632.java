@@ -23,7 +23,7 @@ public class App {
 
     int hp = 50;
 
-    Player player = new Player(list, "human1", hp);
+    Player player = new Player(list, "human1");
 
     player.drawMonsters();
     System.out.println(player.toString());

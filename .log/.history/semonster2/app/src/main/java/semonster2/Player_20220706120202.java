@@ -12,11 +12,9 @@ public class Player {
   LinkedList<Integer> randomNumberList;
 
   Player(LinkedList<Integer> randomNumberList, String playerName, int playerHitPoint) {
-
     this.randomNumberList = randomNumberList;
     this.name = playerName;
     this.hitPint = playerHitPoint;
-
   }
 
   public void drawMonsters() {
@@ -28,7 +26,7 @@ public class Player {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("Deck:" + this.name + " HP:" + this.hitPint + "\n");
+    sb.append("Deck:" + this.name + "\n");
 
     for (Monster m : this.monsterDeck) {
       sb.append(m);
