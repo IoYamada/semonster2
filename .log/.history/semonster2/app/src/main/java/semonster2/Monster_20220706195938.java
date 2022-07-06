@@ -10,8 +10,8 @@ public class Monster {
     evolutionMonster();
   }
 
-  String getMonsterName() {
-    return this.name;
+  int getMonsterRare() {
+    return this.rare;
   }
 
   int getMonsterRare() {

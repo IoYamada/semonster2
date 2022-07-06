@@ -10,7 +10,7 @@ public class Monster {
     evolutionMonster();
   }
 
-  String getMonsterName() {
+  int getMonsterName() {
     return this.name;
   }
 

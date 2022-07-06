@@ -4,7 +4,6 @@
 package semonster2;
 
 import java.util.LinkedList;
-import java.util.Random;
 
 public class App {
   public String getGreeting() {
@@ -13,17 +12,27 @@ public class App {
 
   public static void main(String[] args) {
     System.out.println(new App().getGreeting());
-    System.out.println();
+
+    /*LinkedList<Integer> list = new LinkedList<>();
+
+    for (int i = 0; i < 5; i++) {
+      list.add(i);
+      list.add(i);
+    }
+
+    Player player = new Player(list, "human1");
+
+    player.drawMonsters();
+    System.out.println(player.toString());
+    */
 
     LinkedList<Integer> list = new LinkedList<>();
     LinkedList<Integer> list1 = new LinkedList<>();
     LinkedList<Integer> list2 = new LinkedList<>();
 
-    /* 勝敗用ランダム出力 */
-    Random rand = new Random();
     /* 勝敗用List */
-    list.add(rand.nextInt(5));
-    list.add(rand.nextInt(5));
+    list.add(2);
+    list.add(3);
 
     for (int i = 0; i < 5; i++) {
       list1.add(i);
@@ -33,8 +42,8 @@ public class App {
     }
 
     seMonsterGame gameTest = new seMonsterGame(list, list1, "player1", list2, "player2");
-    System.out.println(gameTest.toString());
-    System.out.println(gameTest.battle());
+    System.out.println(player.toString());
+
   }
 
 }

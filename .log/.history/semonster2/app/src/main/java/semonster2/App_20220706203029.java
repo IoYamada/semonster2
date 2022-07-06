@@ -19,7 +19,6 @@ public class App {
     LinkedList<Integer> list1 = new LinkedList<>();
     LinkedList<Integer> list2 = new LinkedList<>();
 
-    /* 勝敗用ランダム出力 */
     Random rand = new Random();
     /* 勝敗用List */
     list.add(rand.nextInt(5));
